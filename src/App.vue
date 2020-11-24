@@ -1,6 +1,7 @@
 <template>
   <v-app id="app">
-    <v-container fluid>
+    <router-view class="text-center" v-if="mobile" />
+    <v-container fluid v-else>
       <v-row>
         <v-col md="3" class="text-center">
           <img src="../src/assets/daram.png" alt="다람쥐 수현" id="daram">
@@ -12,17 +13,18 @@
         </v-col>
       </v-row>
     </v-container>
-    <!-- <div id="daram">
-      
-    </div>
-    <div id="wrap">
-      
-    </div> -->
   </v-app>
 </template>
 <script>
+  export default {
+  name: 'App',
+  data(){
+    return{
+      mobile: screen.width>767 ? false : true
+    }
+  }
+}
 </script>
-
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap');
   #app{

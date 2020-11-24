@@ -1,6 +1,6 @@
 <template>
   <div>
-  <v-card class="mb-5" color="rgba( 255, 255, 255, 0.0 )" height="400px" style="box-shadow: none;">
+  <v-card class="mb-5" color="rgba( 255, 255, 255, 0.0 )" :height="card_height" style="box-shadow: none;">
     <slot name="header"></slot>
     <v-card
       class="mx-auto mt-8"
@@ -21,7 +21,7 @@
 export default {
   data(){
     return{
-      
+      card_height: screen.width>767 ? 400 : "100vh"
     }
   }
 }

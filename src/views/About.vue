@@ -133,7 +133,8 @@ export default {
         // 10 번
         {content: '"어딘가로 떠나고싶어.." 수현이가 가고싶은 곳은 어디일까요?', a1: '산', a2: '바다'},
       ],
-      value: 10
+      value: 10,
+      mobile: screen.width>767 ? false : true
     }
   },
   methods: {
