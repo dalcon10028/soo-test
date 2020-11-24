@@ -10,6 +10,9 @@ export default new Vuex.Store({
   mutations: {
     correct_answer(state){
       return state.score += 10;
+    },
+    reset_score(state){
+      return state.score = 0;
     }
   },
   actions: {

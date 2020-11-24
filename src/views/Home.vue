@@ -28,6 +28,9 @@ export default {
     }
   },
   methods: {
+  },
+  mounted(){
+    this.$store.commit('reset_store');
   }
 }
 </script>
