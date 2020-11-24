@@ -141,13 +141,13 @@ export default {
     select_answer: function() {
       this.e1 += 1;
       this.value += 10;
-      if(this.e1===10) this.$router.replace('result');
+      if(this.e1===11) this.$router.replace('result');
     },
     select_correct_answer: function() {
       this.$store.commit('correct_answer');
       this.e1 += 1;
       this.value += 10;
-      if(this.e1===10) this.$router.replace('result');
+      if(this.e1===11) this.$router.replace('result');
     },
   },
   computed: {
