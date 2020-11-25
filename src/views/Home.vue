@@ -14,7 +14,7 @@
       당신은 <span style="color: #e800dc" class="highlight">수현이</span>에 대해 얼마나 알고있나요?<br>
       WSHT로 당신의<br><span style="color: #f96969" class="highlight">수현도</span>(수현이에 대해 알고있는 정도)<br>를 알아봅시다.
     </h1>
-    <v-btn class="mt-8" color="#852098" outlined tile width="200" height="50" @click="$router.push('about')">시작하기</v-btn>
+    <v-btn class="mt-8" color="#852098" outlined tile width="200" height="50" @click="$router.replace('about')">시작하기</v-btn>
   </div>
 </template>
 

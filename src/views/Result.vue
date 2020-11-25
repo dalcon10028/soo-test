@@ -20,6 +20,8 @@
     <div v-else-if="score<=70" class="mt-5" v-html="score_values[1].explanation"></div>
     <div v-else-if="score<=80" class="mt-5" v-html="score_values[2].explanation"></div>
     <div v-else-if="score<=100" class="mt-5" v-html="score_values[3].explanation"></div>
+    <v-btn class="mt-8" color="#852098" outlined tile width="200" height="50" @click="restart">다시하기</v-btn>
+
   </div>
 </template>
 <script>
@@ -36,6 +38,12 @@ export default {
     }
   },
   computed:{
+  },
+  methods: {
+    restart(){
+      this.$store.commit('reset_store');
+      this.$router.replace('about');
+    }
   }
 }
 </script>
