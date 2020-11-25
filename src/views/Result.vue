@@ -41,7 +41,7 @@ export default {
   },
   methods: {
     restart(){
-      this.$store.commit('reset_store');
+      this.$store.commit('reset_score');
       this.$router.replace('about');
     }
   }
